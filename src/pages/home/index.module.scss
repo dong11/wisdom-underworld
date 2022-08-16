@@ -1,0 +1,35 @@
+.home-page {
+	width: 100vw;
+	height: 100vh;
+	background-color: #132c33;
+	padding: 10px;
+
+	.title-wrap {
+		display: flex;
+		height: 50px;
+	}
+
+	.top-wrap {
+		height: 100%;
+		display: flex;
+
+		.top-left-box, .top-right-box {
+			width: 200px;
+		}
+
+		.top-center-box {
+			position: relative;
+			flex: 1;
+			border: 1px solid #2983bb;
+
+			.china-map-box {
+				width: 500px;
+				height: 500px;
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
 import routes, { RouterAuth } from './routes';
+
+import "./assets/style/frame.scss";
 import './App.css';
 
 function App() {
