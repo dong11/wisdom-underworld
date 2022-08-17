@@ -1,10 +1,11 @@
+import ExchangeRate from './components/ExchangeRate';
 import MapFlow from './components/MapFlow';
 
 import styles from "./index.module.scss";
 
 function HomePage() {
 
-    return <div className={styles["home-page"]}>
+    return <div className={styles["page"]}>
         {/* 标题栏 */}
         <div className={styles['title-wrap']}>
             <span></span>
@@ -12,7 +13,12 @@ function HomePage() {
         {/* 头部 */}
         <div className={styles["top-wrap"]}>
             {/* 头部左侧 */}
-            <div className={styles["top-left-box"]}></div>
+            <div className={styles["top-left-box"]}>
+                {/* 今日汇率 */}
+                <div className={styles["rate-box"]}>
+                    <ExchangeRate></ExchangeRate>
+                </div>
+            </div>
             {/* 头部中间 */}
             <div className={styles["top-center-box"]}>
                 {/* 地图部分 */}

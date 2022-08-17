@@ -1,4 +1,7 @@
 .app-content {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
+    min-width: 1280px;
+    min-height: 800px;
+    background-color: #132c33;
 }
