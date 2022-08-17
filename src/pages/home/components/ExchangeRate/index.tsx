@@ -77,7 +77,7 @@ function ExchangeRate() {
 
     return (
         <div className={styles["exchange-rate"]}>
-            <div className={styles["table-title"]}>天地银行今日汇率</div>
+            <div className={"table-title"}>天地银行今日汇率</div>
             <Table dataSource={dataSource} columns={columns} size="small" pagination={false} />;
         </div>
     );

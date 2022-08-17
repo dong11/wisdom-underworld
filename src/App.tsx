@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRoutes } from 'react-router-dom';
 import routes, { RouterAuth } from './routes';
 
@@ -9,7 +8,7 @@ function App() {
   const Element = useRoutes(routes);
 
   return (
-    <div className="app-content">
+    <div className="app">
       <RouterAuth>{Element}</RouterAuth>
     </div>
   );

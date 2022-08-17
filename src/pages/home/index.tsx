@@ -1,5 +1,6 @@
 import ExchangeRate from './components/ExchangeRate';
 import MapFlow from './components/MapFlow';
+import SoulEscape from './components/SoulEscape';
 
 import styles from "./index.module.scss";
 
@@ -18,6 +19,10 @@ function HomePage() {
                 <div className={styles["rate-box"]}>
                     <ExchangeRate></ExchangeRate>
                 </div>
+                {/* 勾魂系统 */}
+                <div className={styles["soul-escape-box"]}>
+                    <SoulEscape></SoulEscape>
+                </div>
             </div>
             {/* 头部中间 */}
             <div className={styles["top-center-box"]}>
@@ -27,7 +32,8 @@ function HomePage() {
                 </div>
             </div>
             {/* 头部右侧 */}
-            <div className={styles["top-right-box"]}></div>
+            <div className={styles["top-right-box"]}>
+            </div>
         </div>
         {/* 底部 */}
         <div className={styles["bottom-wrap"]}></div>

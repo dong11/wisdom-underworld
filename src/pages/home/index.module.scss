@@ -5,7 +5,7 @@
 
 	.title-wrap {
 		display: flex;
-		height: 50px;
+		// height: 45px;
 	}
 
 	.top-wrap {
@@ -13,9 +13,26 @@
 		display: flex;
 
 		.top-left-box, .top-right-box {
+			display: flex;
+			flex-direction: column;
 			width: 280px;
 			margin: 0 10px;
-			border: 1px solid #2983bb;
+
+			.rate-box {
+				flex: 1;
+				margin-bottom: 10px;
+				border: 1px solid #2983bb;
+			}
+
+			.soul-escape-box {
+				flex: 1;
+				border: 1px solid #2983bb;
+			}
+
+			.passenger-flow-box {
+				flex: 1;
+				border: 1px solid #2983bb;
+			}
 		}
 
 		.top-center-box {
