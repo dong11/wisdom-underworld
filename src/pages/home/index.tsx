@@ -1,5 +1,6 @@
 import ExchangeRate from './components/ExchangeRate';
 import MapFlow from './components/MapFlow';
+import PassengerFlow from './components/PassengerFlow';
 import SoulEscape from './components/SoulEscape';
 
 import styles from "./index.module.scss";
@@ -17,22 +18,26 @@ function HomePage() {
             <div className={styles["top-left-box"]}>
                 {/* 今日汇率 */}
                 <div className={styles["rate-box"]}>
-                    <ExchangeRate></ExchangeRate>
+                    { <ExchangeRate></ExchangeRate> }
                 </div>
                 {/* 勾魂系统 */}
                 <div className={styles["soul-escape-box"]}>
-                    <SoulEscape></SoulEscape>
+                    { <SoulEscape></SoulEscape> }
                 </div>
             </div>
             {/* 头部中间 */}
             <div className={styles["top-center-box"]}>
                 {/* 地图部分 */}
                 <div className={styles["china-map-box"]}>
-                    <MapFlow></MapFlow>
+                    { <MapFlow></MapFlow> }
                 </div>
             </div>
             {/* 头部右侧 */}
             <div className={styles["top-right-box"]}>
+                {/* 客流统计 */}
+                <div className={styles["passenger-flow-box"]}>
+                    { <PassengerFlow></PassengerFlow> }
+                </div>
             </div>
         </div>
         {/* 底部 */}
